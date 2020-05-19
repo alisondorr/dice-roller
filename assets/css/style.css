@@ -1,0 +1,25 @@
+#color-box {
+    width: 200px;
+    height: 200px;
+}
+.enterInput h1 {
+    background: rgb(50, 62, 100);
+    float: left;
+}
+.clickToRoll {
+    background: rgb(9, 109, 87);
+    float: right;
+}
+#clickToRoll-container, h1 {
+    background: rgb(67, 111, 255);
+    text-align: center;
+}
+.total {
+    float:bottom;
+}
+.clear {
+    clear: both;
+}
+#reset-container, h1 {
+    text-align: center;
+}

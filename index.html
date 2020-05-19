@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Die Roll Game</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>Roll the Die</h1>
+        <!--<label for="name">Players Name (4 to 8 characters):</label> -->
+        <!-- <input type="text" id="name" name="name" required minlength="1" maxlength="8" size="10"> -->
+
+        <label for="enterInput:">Enter the Number of Die Rolls:</label>
+        <input type="number" id="enterInput" name="enterInput" required minlength="1" maxlength="3" size="10"></input>
+
+        <label for="numSides:">Enter the Number of Sides on your Die:</label>
+        <input type="number" id="numSides" name="numSides" required minlength="1" maxlength="3" size="10"></input>
+
+        <button id="clickToRoll">ROLL</button>
+
+        <div type="number" id="total" name="total">TOTAL:</div>
+        <label>_______ is your Total</label>
+
+        <button id="showButton">SHOW ALL ROLLS</button>
+
+        <div type="array" id="diceArray" name="diceArray"></div>
+
+        <ol type="string" class="all Rolls" id="allRolls" name="allRolls">
+        </ol>
+    </div>
+
+    <div id="reset-container">
+        <button id="reset-button">RESET</button>
+    </div>
+    <div class="clear"></div>
+    <script src="assets/javascript/dice.js"></script>
+</body>
+
+</html>
