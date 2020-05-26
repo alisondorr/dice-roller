@@ -15,9 +15,14 @@ let resetButton = document.querySelector("#reset-button")
 //JS code to recognize clicking the roll button 
 clickToRoll.addEventListener("click", function () {
     while (index < enterInput.value) {
-        x = Math.round((Math.random() + 0.5) * numSides.value)
-        if (x > numSides.value) {
-        } else {
+        //x = Math.round((Math.random() + 0.5) * numSides.value)
+        x = Math.floor((Math.random()) * (numSides.value + 1))
+        //if (x = 0) {
+        //}
+        if (x <= (numSides.value)) {
+            // if (x = 0) {
+            // x = Math.floor((Math.random()) * (numSides.value + 1))
+            //} else {
             diceArray[index] = x
             total = total + x
             index += 1
@@ -39,12 +44,15 @@ showButton.addEventListener("click", function () {
 resetButton.addEventListener("click", function () {
     li.innerHTML = 0
     results.innerHTML = 0
-    enterInput.innerHTML = 0
-    numSides.innerHTML = 0
+    //enterInput.innerHTML = 0
+    //numSides.innerHTML = 0
+    enterInput.value = 0
+    numSides.value = 0
     allRollsElement.innerHTML = 0
+    console.log("resetButton")
 })
-        //avg = (total / enterInput.value)
-        //name = name.innerHTML
-        //console.log(diceArray)
-        //console.log("Hi", name, "your total was:  ", total);
-        //console.log("Your average per die roll was
+    //avg = (total / enterInput.value)
+    //name = name.innerHTML
+    //console.log(diceArray)
+    //console.log("Hi", name, "your total was:  ", total);
+    //console.log("Your average per die roll was
