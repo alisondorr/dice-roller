@@ -16,7 +16,7 @@ let resetButton = document.querySelector("#reset-button")
 clickToRoll.addEventListener("click", function () {
     while (index < enterInput.value) {
         //x = Math.round((Math.random() + 0.5) * numSides.value)
-        x = Math.floor((Math.random()) * (numSides.value + 1))
+        x = (Math.floor((Math.random()) * numSides.value)) + 1
         //if (x = 0) {
         //}
         if (x <= (numSides.value)) {
